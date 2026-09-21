@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fourthace Clothing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+    <img src="Picsart_26-07-22_21-07-13-126.jpg"
+         alt="FOURTHACE Clothing Logo">
+</a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="bag-button" id="bagButton">
+            BAG (<span id="cartCount">0</span>)
+        </button>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">NEW PIECES</p>
+
+            <h1>COMING<br><span>SOON</span></h1>
+            <br></b>
+
+            <a href="#shop" class="shop-button">
+                SHOP THE COLLECTION →
+            </a>
+        </div>
+
+
+        <div class="hero-bottom">
+            <span>EST.2020</span>
+            <span>IT SHALL SPEAK.</span>
+        </div>
+    </section>
+
+    <!-- Shop section -->
+    <section class="shop-section" id="shop">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">THE LATEST DROP</p>
+                <h2>SHOP THE COLLECTION</h2>
+            </div>
+
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <!-- Product 1 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="Picsart_26-09-17_12-17-37-561.png"
+                         alt="Kryptonite graphic T-shirt">
+
+                    <span class="product-tag">COMING SOON</span>
+                </div>
+
+                <div class="product-info">
+                    <div>
+                        <h3>KRYPTONITE GRAPHIC TEE</h3>
+                        <p>WHITE T-SHIRT</p>
+                    </div>
+
+                    <span class="price">R400</span>
+                </div>
+
+                <button class="add-button"
+                        data-id="1">
+                    ADD TO BAG +
+                </button>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="black-tee.png"
+                         alt="FOURTHACE logo T-shirt">
+
+                    <span class="product-tag">COMING SOON</span>
+                </div>
+
+                <div class="product-info">
+                    <div>
+                        <h3>FOURTHACE LOGO TEE</h3>
+                        <p>BLACK TEE</p>
+                    </div>
+
+                    <span class="price">R420</span>
+                </div>
+
+                <button class="add-button"
+                        data-id="2">
+                    ADD TO BAG +
+                </button>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="Picsart_26-06-21_13-32-21-455.jpg"
+                         alt="Elegance Logo Hoodie">
+
+                    <span class="product-tag">COMING SOON</span>
+                </div>
+
+                <div class="product-info">
+                    <div>
+                        <h3>ELEGANCE LOGO HOODIE</h3>
+                        <p>BLACK HOODIE</p>
+                    </div>
+
+                    <span class="price">R550</span>
+                </div>
+
+                <button class="add-button"
+                        data-id="3">
+                    ADD TO BAG +
+                </button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about-section" id="about">
+        <p class="eyebrow"><h1>WHO WE ARE?</h1></p><br>
+
+        <h2>EXECUTIVE SUMMARRY</h2>
+
+        <p>
+            Fourthace clothing is a modern streetwaer and lifestyle clothing brand
+            designed to merge urban fasion contemporary minimalist aesthetics. The brand
+            focuses on delivering high quality apparel that represents confidence, indiviuality, creativity and youth culture.
+            The business will intially operate as an online-based clothing brand targetting fashion-conscious young adults through social media
+            marketing, influencer collaborations and e-commerce platforms. Fourthace aims to become recongnizable and influencial South African 
+            streetwear brand with future international expansion opportunities. The long term is to establish Fourthace Clothing as a premium
+            youth fashion brand known for originality, exclusivity and cultural relevance
+        </p>
+    </section>
+
+    <!-- Contact section -->
+    <footer id="contact">
+        <div class="footer-top">
+            <div>
+                <a href="#" class="logo">FOURTH<span>ACE</span></a>
+                <p>IT SHALL SPEAK.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="https://instagram.com/fourthacex"
+                   target="_blank">Instagram ↗</a>
+
+                <a href="https://wa.me/27754507258"
+                   target="_blank">WhatsApp ↗</a>
+
+                <a href="tel:+27636309193">Call us ↗</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 FOURTHACE CLOTHING</span>
+            <span>IT SHALL SPEAK.</span>
+        </div>
+    </footer>
+
+    <!-- Shopping bag drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h2>YOUR BAG</h2>
+
+            <button id="closeCart" aria-label="Close bag">
+                ✕
+            </button>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Your bag is currently empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>TOTAL</span>
+                <strong id="cartTotal">R0</strong>
+            </div>
+
+            <button id="checkoutButton" class="checkout-button">
+                ORDER ON WHATSAPP →
+            </button>
+
+            <p class="cart-note">
+                Orders are confirmed directly through WhatsApp.
+            </p>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
